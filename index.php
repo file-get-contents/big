@@ -15,7 +15,7 @@ class some_test
 
     public function __get(string $name) :string | null
     {
-        return $this->{$name} ?? throw new LogicException($name ." does not exists", 500);
+        return $this->{$name} ?? throw new LogicException($name ." does not exists", 500);      //throw"式"
     }
 
 }
